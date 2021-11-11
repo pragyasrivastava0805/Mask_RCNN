@@ -17,7 +17,7 @@ Architecture of Mask-RCNN
 
 
 
-In the Model implemented in the Repo https://github.com/matterport/Mask_RCNN/ the feature maps output by FP2,FP3,FP4 and FP5 are P2,P3,P4,P5.To make the model robust,I introduced a Gaussian Noise layer with Standard deviation 0.1 in each of these.
+In the Model implemented in the Repo https://github.com/matterport/Mask_RCNN/ the feature maps output by FP2,FP3,FP4 and FP5 are P2,P3,P4,P5.To make the model robust,I introduced a Lambda layer which multiplies a feature map with a random scalar between 0.8 and 1.20.
 I have committed the relevant changes needed to this repo.
 Step 1:Download the MS Coco Dataset from http://images.cocodataset.org/zips/train2014.zip
                                          http://images.cocodataset.org/zips/val2014.zip
